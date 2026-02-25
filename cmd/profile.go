@@ -27,13 +27,13 @@ func (hc *GhostWriterPlugin) Profile() {
 		return
 	}
 
-	if _, ok = kaine["logger"]; !ok {
+	if _, ok = kaine["ghostwriter"]; !ok {
 		return
 	}
 
 	config, err = MapKey[map[string]any](kaine, "ghostwriter")
 	if err != nil {
-		hc.LogFatal("failed to parse kaine logger config entry: %v", err)
+		hc.LogFatal("failed to parse kaine ghostwriter config entry: %v", err)
 		return
 	}
 
@@ -44,31 +44,31 @@ func (hc *GhostWriterPlugin) Profile() {
 	if MapExists(config, "domain") {
 		domain, err = MapKey[string](config, "domain")
 		if err != nil {
-			hc.LogFatal("failed to parse kaine logger ghostwriter config domain entry: %v", err)
+			hc.LogFatal("failed to parse kaine ghostwriter config domain entry: %v", err)
 			return
 		}
 	} else {
-		hc.LogFatal("failed to parse kaine logger ghostwriter config domain entry: not found")
+		hc.LogFatal("failed to parse kaine ghostwriter config domain entry: not found")
 	}
 
 	if MapExists(config, "api-token") {
 		token, err = MapKey[string](config, "api-token")
 		if err != nil {
-			hc.LogFatal("failed to parse kaine logger ghostwriter config token entry: %v", err)
+			hc.LogFatal("failed to parse kaine ghostwriter config token entry: %v", err)
 			return
 		}
 	} else {
-		hc.LogFatal("failed to parse kaine logger ghostwriter config token entry: not found")
+		hc.LogFatal("failed to parse kaine ghostwriter config token entry: not found")
 	}
 
 	if MapExists(config, "operation-id") {
 		id, err = MapKey[int64](config, "operation-id")
 		if err != nil {
-			hc.LogFatal("failed to parse kaine logger ghostwriter config operation-id entry: %v", err)
+			hc.LogFatal("failed to parse kaine ghostwriter config operation-id entry: %v", err)
 			return
 		}
 	} else {
-		hc.LogFatal("failed to parse kaine logger ghostwriter config operation-id entry: not found")
+		hc.LogFatal("failed to parse kaine ghostwriter config operation-id entry: not found")
 	}
 
 	hc.ghostwriter.executionInput = make(map[string]string)
