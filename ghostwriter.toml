@@ -1,0 +1,5 @@
+
+[kaine.ghostwriter]
+   domain       = 'https://127.0.0.1'
+   api-token    = '<YOUR API TOKEN>'
+   operation-id = 1
