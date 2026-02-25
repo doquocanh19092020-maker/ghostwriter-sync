@@ -1,0 +1,14 @@
+{
+  "name"        : "Kaine Ghostwriter",
+  "plugin"      : "kaine.ghostwriter",
+  "type"        : "management",
+  "categories"  : ["kaine", "management", "ghostwriter"],
+  "version"     : "0.1",
+  "license"     : "",
+  "description" : "The Kaine Ghostwriter Plugin",
+  "readme"      : "The Kaine Ghostwriter Plugin",
+  "author"      : {
+    "name" : "5pider",
+    "url"  : "https://x.com/C5pider"
+  }
+}
