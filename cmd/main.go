@@ -29,10 +29,10 @@ var (
 // Register
 // is the first function to be called once the
 // plugin has been loaded into the havoc teamserver
-func (lp *GhostWriterPlugin) Register(server any) (map[string]any, error) {
+func (hc *GhostWriterPlugin) Register(server any) (map[string]any, error) {
 	// cast the given havoc interface to
 	// the internal plugin HavocInterface
-	lp.IHavocCore = server.(havoc.IHavocCore)
+	hc.IHavocCore = server.(havoc.IHavocCore)
 
 	// return the plugin metadata
 	return map[string]any{
@@ -44,15 +44,15 @@ func (lp *GhostWriterPlugin) Register(server any) (map[string]any, error) {
 	}, nil
 }
 
-func (lp *GhostWriterPlugin) UnRegister() error {
-	_ = lp.TraceAgentEventRemove(lp.KaineTraceEventCallback)
+func (hc *GhostWriterPlugin) UnRegister() error {
+	_ = hc.TraceAgentEventRemove(hc.KaineTraceEventCallback)
 	return nil
 }
 
-func (lp *GhostWriterPlugin) ManagerRegister() error {
-	_ = lp.TraceAgentEventRegister(lp.KaineTraceEventCallback)
+func (hc *GhostWriterPlugin) ManagerRegister() error {
+	_ = hc.TraceAgentEventRegister(hc.KaineTraceEventCallback)
 
-	lp.Profile()
+	hc.Profile()
 
 	return nil
 }
